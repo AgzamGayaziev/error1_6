@@ -1,0 +1,38 @@
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #d9fff5;
+  padding: 18px 16px 18px 16px;
+  background-color: $text;
+}
+.logo__link,
+.navigation__button {
+  display: block;
+  height: 100%;
+}
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.navigation__list--menu {
+  display: flex;
+  align-items: center;
+  .navigation__logo {
+    margin-left: 16px;
+  }
+}
+
+.navigation__list--menu::after {
+  content: url("./img/divider/divider.svg");
+  margin-left: 16px;
+}
+.navigation__list--feedback {
+  display: none;
+}
+.navigation__list--support {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
